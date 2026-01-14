@@ -3,25 +3,51 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Mina's Projects</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <h1>My projects</h1>
-    <h2>
-        Hi! I'm a brand new Web Developer and I want to show off the projects and web apps I'm making as I'm continuing to learn. Take a Look!
-    </h2>
-    <hr />
-    <a href="./early-html-portfolio/index.html">
-        <h2>My Early HTML Project (first project)</h2> <img src="./assets/img/early-html-portfolio.PNG" height=400>
-    </a>
-    <a href="./drum-kit/index.html">
-        <h2>Drum Kit Project</h2> <img src="./assets/img/drum-kit.PNG" height=400>
-    </a>
-    <a href="./simon-says/index.html">
-        <h2>Simon Says Project</h2> <img src="./assets/img/simon-says.PNG" height=400>
-    </a>
-    <hr />
+    <header class="site-header">
+        <div class="container">
+            <h1>Mina's Projects</h1>
+            <p class="tagline">A small collection of my web projects!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="projects" aria-label="Project gallery">
+            <a class="project" href="./early-html-portfolio/index.html">
+                    <figure>
+                        <figcaption>Early HTML Project</figcaption>
+                        <img src="./assets/img/early-html-portfolio.PNG" alt="Screenshot of early HTML portfolio">
+                    </figure>
+            </a>
+
+            <a class="project" href="./drum-kit/index.html">
+                <figure>
+                    <figcaption>Drum Kit</figcaption>
+                    <img src="./assets/img/drum-kit.PNG" alt="Screenshot of drum kit project">
+                </figure>
+            </a>
+
+            <a class="project" href="./simon-says/index.html">
+                <figure>
+                    <figcaption>Simon Says</figcaption>
+                    <img src="./assets/img/simon-says.PNG" alt="Screenshot of Simon Says project">
+                </figure>
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>Made by Mina! I'll keep updating as I go!</small>
+        </div>
+    </footer>
+
+    
 </body>
 
 </html>
