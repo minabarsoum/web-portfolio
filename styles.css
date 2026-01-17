@@ -143,6 +143,43 @@ p { color: rgba(0,0,0,0.85); }
   .container { padding: 16px; }
 }
 
+/* Tablet */
+@media (max-width: 720px) {
+  .projects {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    justify-content: center;
+    /* keeps the grid centered */
+  }
+
+  .project img {
+    height: 160px;
+  }
+}
+
+/* Mobile: stack vertically + center */
+@media (max-width: 520px) {
+  .projects {
+    grid-template-columns: 1fr;
+    /* stack */
+    justify-items: center;
+    /* center each card */
+  }
+
+  .project {
+    width: 100%;
+    max-width: 420px;
+    /* optional: prevents huge cards on wider phones */
+  }
+
+  .project img {
+    height: 140px;
+  }
+
+  .container {
+    padding: 16px;
+  }
+}
+
 /* Ensure main and footer remain transparent so gradient shows consistently */
 main, .site-footer, .container { background: transparent; }
 
